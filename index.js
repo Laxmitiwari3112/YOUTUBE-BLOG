@@ -24,4 +24,6 @@ app.get("/", (req, res) => {
 
 // signup route
 app.use("/user", userRoute);
+
+
 app.listen(PORT, () => console.log(`Server Started at PORT: ${PORT}`));

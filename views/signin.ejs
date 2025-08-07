@@ -4,19 +4,14 @@
 
 <head>
     <%- include('./partials/head.ejs') %>
-        <title>SignUp</title>
+        <title>SignIn</title>
 </head>
 
 <body>
     <%- include('./partials/nav.ejs') %>
 
         <div class="container mt-3 p-2">
-            <form action="/user/signup" method="POST">
-                <div class="mb-3">
-                    <label for="fullName" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="fullName" name="fullName"
-                        placeholder="Enter your fullname">
-                </div>
+            <form action="/user/signin" method="POST">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
